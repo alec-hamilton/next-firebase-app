@@ -1,4 +1,3 @@
-import { Toaster } from "react-hot-toast";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import { UserContext } from "@/lib/context";
@@ -11,7 +10,6 @@ export default function App({ Component, pageProps }) {
     <UserContext.Provider value={userData}>
       <Navbar />
       <Component {...pageProps} />
-      <Toaster />
     </UserContext.Provider>
   );
 }
