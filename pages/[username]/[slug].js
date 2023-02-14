@@ -1,5 +1,7 @@
+import styles from "../../styles/Post.module.css";
 import { firestore, getUserWithUsername, postToJSON } from "@/lib/firebase";
 import PostContent from "@/components/PostContent";
+import { useDocumentData } from "react-firebase-hooks/firestore";
 
 export const getStaticProps = async ({ params }) => {
   const { username, slug } = params;

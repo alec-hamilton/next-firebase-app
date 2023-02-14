@@ -5,7 +5,7 @@ const PostItem = ({ post, admin = false }) => {
   const minutesToRead = (wordCount / 100 + 1).toFixed(0);
   
   return (
-    <div>
+    <div className="card">
       <Link href={`/${post.username}`}>
         <strong>By @{post.username}</strong>
       </Link>
